@@ -1,7 +1,7 @@
 <!-- Per poter funzionare tutto il codice PHP va inserita all'interno di questa sezione. Se viene aperta in un browser non viene mostrato niente, questo perché
      PHP è un linguaggio creato e utilizzato per i server. -->
 
-<? php
+<?php
 
 phpinfo();
 

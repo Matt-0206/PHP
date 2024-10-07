@@ -10,4 +10,4 @@ phpinfo();
 <!-- Dove inserire i file:
  
      Aprire Xampp e trovare la voce expolrer
-     Explorer -> htdocs (ATTENZIONE, htdocs contiene tutti i file che verranno resi pubblici e visibili a TUTTI) -> php-8 -> lezione_00 -->
+     Explorer -> htdocs (ATTENZIONE, htdocs contiene tutti i file che verranno resi pubblici e visibili a TUTTI) -> php-8 -> lezione_00 -->      

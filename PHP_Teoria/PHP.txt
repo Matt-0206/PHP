@@ -1,0 +1,14 @@
+Introduzione:
+
+PHP è un linguaggio di scripting, come javascript, la differenza è che quest'ultimo può essere eseguito su un qualsiasi Browser.
+PHP non funziona, bensì funziona con l'appoggio di un server (un sito in WordPress utilizza PHP, ad esempio Facebook e Wikipedia).
+
+----------------------------------------------------------------
+
+Cosa si intende con un sito che utilizza PHP?
+
+PHP crea pagine dinamiche, ovvero mostra e aggiorna informazioni dinamicamente. Può inoltre caricare file e può collegarsi a un database.
+
+----------------------------------------------------------------
+
+Come funziona PHP?

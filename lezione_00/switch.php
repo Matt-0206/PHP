@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title> </title>
+<title>Switch</title>
 </head>
 
 <body>
@@ -48,8 +48,6 @@ switch ($myVar){
         echo '$myVar non è un frutto e non è 1.';
 
 };
-
-
 
 ?>
 

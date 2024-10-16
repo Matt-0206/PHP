@@ -15,8 +15,8 @@
         
             class Fruit{
 
-                public $name; // "public" rende le variabili pubbliche all'interno del codice, si usa se vengono usate più volte all'interno del codice
-                public $color;
+                public $name; // "public" rende le variabili pubbliche all'interno del codice, si usa se vengono usate più volte all'interno del codice.
+                public $color;  // "public" rende le variabili o i metodi accessibili all'interno e all'esterno della classe
 
                 function __construct($name, $color, $price){ //quando si crea un constructor si usano due underscore all'inizio
 
@@ -48,7 +48,11 @@
 
             $apple = new Fruit("Apple", "Red", '0.50€');
 
-            echo $apple->get_name() . '<br>' . $apple->get_color() . '<br>' . $apple->get_price(); 
+            echo $apple->get_name() . '<br>' . $apple->get_color() . '<br>' . $apple->get_price() . '<br>'; 
+
+            $ciliegia = new Fruit("Ciliegia", "", "");
+
+            echo $ciliegia->get_name() . '<br>';
 
         ?>
 

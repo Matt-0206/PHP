@@ -12,4 +12,4 @@ if($title == 'index'){
 
 }
 
-$title = ucwords($title);  //Rende la prima lettera di una parola MAIUSCOLA 
+$title = ucwords($title); //Rende la prima lettera di una parola MAIUSCOLA (uc sta per Upper Case)

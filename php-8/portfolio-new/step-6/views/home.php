@@ -1,7 +1,25 @@
-<?php 
+<?php
 
-    $info = "<h1>Benvenuto sul mio sito!</h1>
-    
-    <p>In questa pagina troverete le informazioni riguardo il mio portfolio</p>";
+$info = "<h1>Benvenuto!</h1>
+<p>In questo sito troverai tante cose.</p>
+
+";
+
+$style = "
+
+<style>
+
+nav a:nth-child(1){
+text-decoration:underline;
+
+}
+
+</style>
+
+
+
+";
+
+
 
 ?>

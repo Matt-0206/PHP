@@ -1,36 +1,45 @@
-<?php 
+<?php
+include_once "views/navigation.php";
+include_once "views/footer.php";
+include_once "classes/Page_Data.class.php";
 
-    include_once "views/navigation.php";
-    include_once "classes/Page_Data.class.php";
-
-    $pageData = new Page_Data(); //Inizializzo la classe
-
-    $pageData->title = "Nuovo sito Portfolio";
-    $pageData->css = "<link href='css/layout.css' rel='stylesheet'>";
-
-    $pageData->content = $nav;
-
-    $naivgationIsClicked = isset($_GET['page']);
+$pageData = new Page_Data();
 
 
-    if ($naivgationIsClicked) {
+$pageData->title = "Gioele Specogna portfolio";
+$pageData->css = "<link href='css/layout.css' rel='stylesheet'>";
 
-        $fileToLoad = $_GET['page'];
+//mette la navigazione nel contenuto della pagina.
+$pageData->content = $nav;
+
+$navigationIsClicked = isset($_GET['page']);
+
+if ($navigationIsClicked) {
 
 
+    $fileToLoad = $_GET['page'];
 
-    }else{
+   
 
-        $fileToLoad = "home";
+}else{
 
-    }
+    $fileToLoad = "home";
 
-    include_once "views/$fileToLoad.php";
 
-    $pageData->content .= $info;
+}
 
-    require "templates/page.php";
 
-    echo $page;
+include_once "views/$fileToLoad.php";
+
+$pageData->content .= $info;
+
+$pageData->content .= $foot;
+
+$pageData->embeddedStyle = $style;
+
+
+require "templates/page.php";
+
+echo $page;
 
 ?>

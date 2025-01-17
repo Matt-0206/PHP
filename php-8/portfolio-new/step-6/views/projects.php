@@ -1,16 +1,29 @@
 <?php
 
-    $info = "
-    
-    <h1>I miei progetti</h1>
+$info = "<h1>I miei progetti</h1>
+<ul>
 
-    <ul>
+<li>Primo progetto</li>
+<li>Secondo progetto</li>
+</ul>
 
-    <li>Primo Progetto</li>
-    <li>Secondo Progetto</li>
-      
-    </ul>
+";
 
-    ";
+$style = "
+
+<style>
+
+nav a:nth-child(3){
+text-decoration:underline;
+
+}
+
+</style>
+
+
+
+";
+
+
 
 ?>

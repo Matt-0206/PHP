@@ -1,11 +1,25 @@
-<?php 
+<?php
 
-    $info = "
-    
-    <h1>Su di noi</h1>
+$info = "<h1>About</h1>
+<p>Siamo un'azienda rinominata nel settore del niente.</p>
 
-    <p>Leggi tutte le mie informazioni su di noi...</p>
-    
-    ";
+";
+
+$style = "
+
+<style>
+
+nav a:nth-child(5){
+text-decoration:underline;
+
+}
+
+</style>
+
+
+
+";
+
+
 
 ?>

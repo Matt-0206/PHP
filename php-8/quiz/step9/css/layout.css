@@ -1,0 +1,96 @@
+/* colors: https://colorhunt.co/palette/e4e0e1d6c0b3ab886d493628 */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body{
+
+    font-family: "Open Sans", serif;
+    background-color: #E4E0E1;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 4rem;
+
+}
+
+p{
+
+    color: #493628;
+    font-size: 1.5rem;
+
+}
+
+nav {
+
+    background-color: #D6C0B3;
+    padding: 1rem;   
+
+}
+
+nav a{
+
+    text-decoration:none;
+    color: #493628;
+    margin-left: 10px;
+    font-size: 2rem;
+    border: 2px solid #493628;
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+    
+    
+}
+
+nav a:hover{
+    
+    text-decoration: underline;
+
+}
+
+form{
+
+    color: #493628;
+    border: 2px solid #493628;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    text-align: left;
+    margin-left: 25%;
+    margin-right: 25%;
+
+}
+
+select{
+
+    color: #493628;
+    font-size: 1.2rem;
+    border: 2px solid #493628;
+    border-radius: 0.5rem;
+
+}
+
+input[type=submit]{
+
+    color: #493628;
+    font-size: 1.2rem;
+    border: 2px solid #493628;
+    border-radius: 0.5rem;
+    padding: 10px;
+    margin-top: 1rem;
+
+}
+
+input[type=number]{
+
+    color: #493628;
+    font-size: 1.2rem;
+    border: 2px solid #493628;
+    border-radius: 0.5rem;
+
+}
+
+input[type=text]{
+
+    color: #493628;
+    font-size: 1.2rem;
+    border: 2px solid #493628;
+    border-radius: 0.5rem;
+
+}

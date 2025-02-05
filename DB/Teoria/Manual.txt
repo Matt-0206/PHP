@@ -1,0 +1,25 @@
+Tipi di dati (caratteriali):
+
+	- VARCHAR: Inserisci una stringa fino a 65'535 caratteri, da dichiarare, massimi
+	- CHAR: Inserisce una stringa con 255 caratteri massimi
+	- TEXT: Inserisci una stringa fino a 65'535 caratteri, non possono essere dichiarati
+
+Tipi di dati (numeriche):
+
+	- INT: Numeri interi
+	- FLOW: Numeri con la virgola
+	- DECIMAL: Contiene un numero fisso di cifre dopo la virgola (es. Dati monetari)
+
+-------------------------------------------------------------------------------------------------
+
+Come interrogare il database:
+
+1) Connettersi al database usando hostname, username, password e db_name
+2) Preparare una QUERY SQL
+3) Eseguire la QUERY e salvare il risultato
+4) Estrarre i dati dal risultato
+
+Ci sono 2 metodi per interrogare il database:
+
+	- mysqli
+	- PDO

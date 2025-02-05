@@ -14,7 +14,7 @@ Tipi di dati (numeriche):
 
 Come interrogare il database:
 
-1) Connettersi al database usando hostname, username, password e db_name
+1) Connettersi al database usando hostname, db_name, username e password
 2) Preparare una QUERY SQL
 3) Eseguire la QUERY e salvare il risultato
 4) Estrarre i dati dal risultato

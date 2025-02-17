@@ -4,8 +4,10 @@
     require_once 'connection/utility_funcs.php';
     $conn = dbConnect('read');
 
-    $sql = 'SELECT * FROM teachers
-            ORDER BY school ASC';   
+    // $sql = 'SELECT * FROM teachers
+    //         ORDER BY school ASC';   
+        
+    $sql = 'SELECT last_name, school, hire_date FROM teachers ORDER BY school ASC, hire_date DESC';
 
     $result = $conn->query($sql);
 

@@ -4,7 +4,7 @@
     require_once 'connection/utility_funcs.php';
     $conn = dbConnect('read');
 
-    $sql = 'SELECT * FROM teachers ORDER BY  last_name ASC, school ASC';
+    $sql = 'SELECT * FROM teachers ORDER BY  school ASC, last_name ASC';
 
     $result = $conn->query($sql);
 
@@ -47,8 +47,8 @@
 
     <tr>
 
-        <th>Last Name</th>
         <th>School</th>
+        <th>last_name</th>
 
     </tr>
 
@@ -57,8 +57,8 @@
     foreach($conn->query($sql) as $row) { ?> 
 
     <tr>
-        <td><?= $row['last_name'] ?></td>
         <td><?= safe($row['school']) ?></td>
+        <td><?= $row['last_name'] ?></td>
     </tr>
 
     <?php } ?>

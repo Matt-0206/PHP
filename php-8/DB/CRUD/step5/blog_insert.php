@@ -21,7 +21,7 @@
 
         if ($OK){
 
-            header('Location: http://localhost/php-8/DB/CRUD/step3/blog_list.php');
+            header('Location: http://localhost/php-8/DB/CRUD/step5/blog_list.php');
             exit;
 
         } else {

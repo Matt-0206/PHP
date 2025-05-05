@@ -20,6 +20,7 @@ Perché stai usando una sintassi alternativa del costrutto if, chiamata sintassi
         <p><strong>Cognome:</strong> <?= htmlspecialchars($studente['cognome']) ?></p>
         <p><strong>Email:</strong> <?= htmlspecialchars($studente['email']) ?></p>
         <p><strong>Telefono:</strong> <?= htmlspecialchars($studente['telefono']) ?></p>
+        <p><strong>Età:</strong> <?= htmlspecialchars($studente['età']) ?></p>
 
     <?php else: ?>
 

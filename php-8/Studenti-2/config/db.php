@@ -2,7 +2,7 @@
 $host = 'localhost';
 $db = 'mvc_studenti';
 $user = 'root';
-$pass = 'root';
+$pass = '';
 
 
 $conn = "mysql:host=$host;dbname=$db";

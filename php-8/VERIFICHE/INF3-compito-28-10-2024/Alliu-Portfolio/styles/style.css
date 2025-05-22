@@ -1,0 +1,129 @@
+body{
+
+    margin-left: 25%;
+    margin-right: 25%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+main{
+
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+
+}
+
+.title{ /* Titolo pagina */
+
+    font-size: 3rem;
+    grid-column: 1 / 3;
+    grid-row: 1;
+    text-align: center;
+
+}
+
+.subtitle{ /* Sottotitolo pagina */
+
+    font-size: 2.5rem;
+    grid-column: 1/3;
+    grid-row: 2;
+    text-align: center;
+
+}
+
+p{ /* Paragrafi */
+
+    margin-left: 6%;
+    margin-right: 6%;
+    grid-column: 1 / 3;
+    grid-row: auto;
+    text-align: justify;
+
+}
+
+.info{ 
+
+    grid-column: 1 / 3;
+    grid-row: auto;
+
+}
+
+.contatti{ /* menù contatti */
+
+    grid-column: 1;
+    grid-row: auto;
+    margin: auto;
+    padding-bottom: 1rem;
+
+}
+
+/* Link */
+
+a{
+
+    color: black;
+
+}
+
+/*----------------------------------------------*/
+
+/* Menù di navigazione */
+
+.nav{ 
+
+    text-align: right;
+    border: 2px solid black;
+
+}
+
+.nav li{
+
+    font-size: 1.5rem;
+    display: inline;
+    padding-right: 1rem;
+
+}
+
+.nav #here{
+
+    border: 1px solid black;
+    text-decoration: none;
+
+}
+
+.nav a{
+
+    color: black;
+
+}
+
+/*----------------------------------------------*/
+
+.img{ /* Immagini */
+
+    grid-column: 1;
+    grid-row: auto;
+    margin: auto;
+    padding-bottom: 1rem;
+
+}
+
+.caption{ /* Caption Immagine */
+
+    grid-column: 2;
+    grid-row: auto;
+    text-align: left;
+    margin: auto;
+
+}
+
+.footer{ /* Footer */
+
+    padding: 1rem;
+    grid-column: 1/3;
+    grid-row: auto;
+    border: 2px solid black;
+
+}

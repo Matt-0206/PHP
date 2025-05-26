@@ -36,6 +36,13 @@ class Book {
 
     }
 
+    public function new($titolo, $autore, $anno, $stato){
+
+        $sql = $this->pdo->prepare( "INSERT INTO books (titolo, autore, anno, stato) VALUES (?, ?, ?, ?)" );
+        return $sql->execute([$titolo, $autore, $anno, $stato]);
+
+    }
+
 }
 
 ?>

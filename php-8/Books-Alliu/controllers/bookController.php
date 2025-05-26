@@ -27,4 +27,23 @@ class BookController {
         header("Location: index.php");
 
     }
+
+    public function loadForm(){
+
+        require __DIR__ . '/../views/aggiungi_libro.php';
+
+    }
+
+    public function store(){
+
+        if( isset($_POST['titolo'], $_POST['autore'], $_POST['anno'], $_POST['stato']) ){
+
+            $this->bookModel->new( $_POST['titolo'], $_POST['autore'], $_POST['anno'], $_POST['stato'] );
+
+        }
+
+        header("Location: index.php");
+
+    }
+
 }

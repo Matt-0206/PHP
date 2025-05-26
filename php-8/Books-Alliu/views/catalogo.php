@@ -39,6 +39,8 @@
 
     </table>
 
+    <p><a href="index.php?action=loadForm">Aggiungi un libro</a></p>
+
 </body>
 
 </html>

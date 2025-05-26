@@ -51,7 +51,7 @@ class StudenteController {
 
     public function modifica($id){
 
-        if($_SERVER['REQUEST_METHOD'] === 'POST'){
+        if($_SERVER['REQUEST_METHOD'] === 'POST'){ // quando modifico è salvo la modifica (Form con metodo POST), intercetta i dati cambiati
 
             $dati = [
 
@@ -66,7 +66,7 @@ class StudenteController {
             header("Location: index.php");
             exit;
 
-        } else {
+        } else { // Carica la view quando il pulsante dettagli è premuto
 
             $studente = $this->studenteModel->trovaPerId($id);
             require __DIR__ . '/../view/modifica_studente.php';

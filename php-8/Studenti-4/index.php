@@ -6,8 +6,8 @@ require_once __DIR__ . '/controller/StudenteController.php';
 $controller = new StudenteController();
 
 //Creaiamo due variabili
-$action = $_GET['action'] ?? 'lista';
-$id = $_GET['id'] ?? null;
+$action = $_GET['action'] ?? 'lista'; // condizione abbreviata "if {} else {}". Controlla l'azione (ovvero "action") invocata con $_GET e la esegue, se non è presente invoca 'lista'
+$id = $_GET['id'] ?? null; // Prende il valore 'id' di ogni studente, se non è presente imposta '$id' a 'null'
 
 if ($action === 'dettaglio' && $id) {
 

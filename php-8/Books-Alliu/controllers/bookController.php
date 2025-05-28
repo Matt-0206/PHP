@@ -13,6 +13,7 @@ class BookController {
 
         $books = $this->bookModel->all();
         require __DIR__ . '/../views/catalogo.php';
+
     }
 
     public function dettaglio($id) {
@@ -44,6 +45,13 @@ class BookController {
 
         header("Location: index.php");
 
+    }
+
+    public function letti() {
+
+        $books = $this->bookModel->libriLetti();
+        require __DIR__ . '/../views/libri_letti.php';
+        
     }
 
 }

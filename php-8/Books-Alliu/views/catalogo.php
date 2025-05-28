@@ -41,6 +41,8 @@
 
     <p><a href="index.php?action=loadForm">Aggiungi un libro</a></p>
 
+    <p><a href="index.php?action=letti">Libri letti</a></p>
+
 </body>
 
 </html>

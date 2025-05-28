@@ -51,7 +51,7 @@ class StudenteController {
 
     public function modifica($id){
 
-        if($_SERVER['REQUEST_METHOD'] === 'POST'){ // quando modifico è salvo la modifica (Form con metodo POST), intercetta i dati cambiati
+        if($_SERVER['REQUEST_METHOD'] === 'POST'){ // quando modifico e salvo la modifica (Form con metodo POST), intercetta i dati cambiati
 
             $dati = [
 

@@ -1,4 +1,7 @@
 <?php
+
+// E' la prima pagina ad essere caricata e si chiama Router, instrada tutte le funzioni che vengono chiamate
+
 // Incorpora 'StudenteController.php'
 require_once __DIR__ . '/controller/StudenteController.php';
 

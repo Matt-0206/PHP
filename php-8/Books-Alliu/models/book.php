@@ -43,6 +43,14 @@ class Book {
 
     }
 
+    public function libriLetti() {
+
+        $sql = "SELECT id, titolo, autore, anno, stato FROM books WHERE stato = 'Letto' ";
+        $result = $this->pdo->query($sql);
+        return $result->fetchAll();
+
+    }
+
 }
 
 ?>

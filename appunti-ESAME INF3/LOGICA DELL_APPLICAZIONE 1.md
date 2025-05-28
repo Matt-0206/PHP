@@ -86,7 +86,7 @@ dettaglio($id) chiama la funzione trovaPerId($id) presente sul model e contempor
 Notare che qui la mia variabile si chiama $studente (singolare)
 
 
-### INDEX
+### INDEX (Router)
 File fondamentale, fa partire tutta l'applicazione, creando un'istanza della classe StudenteController() che si trova in StudenteController.php. Per far questo devo prima includere il file controller:
 
 
@@ -124,3 +124,19 @@ Se però un utente clicca sul link 'dettaglio' ecco che nell'url viene passato a
 e quindi chiamiamo la funzione 'dettaglio' che si trova sul controller.
 
 
+In `lista_studenti.php` hai link che puntano a `index.php` anche se il file si trova nella cartella `view` perché il contesto di esecuzione dell'applicazione è sempre relativo al punto di entrata dell'applicazione, che è `index.php` nella directory root.
+
+Ecco perché funziona così:
+
+1. Quando un utente accede alla tua applicazione, inizia sempre da `index.php` nella root
+2. Il file `index.php` fa da "front controller" e gestisce tutte le richieste
+3. Quando `studenteController.php` carica la vista con `require __DIR__ . '/../view/lista_studenti.php'`, il contenuto di `lista_studenti.php` viene incluso ed eseguito, ma il contesto dell'URL rimane quello del file originale (`index.php`)
+
+In pratica:
+- L'utente non naviga mai direttamente alla cartella `view/lista_studenti.php`
+- Tutti i link devono puntare al controller principale (`index.php`) con i parametri appropriati per indicare l'azione desiderata
+- Il pattern è: `index.php?action=nomeAzione&parametri`
+
+Questo è un approccio standard nei framework MVC in PHP, dove un singolo punto di ingresso gestisce tutte le richieste e il routing, mantenendo le viste isolate dalla logica di navigazione diretta.
+
+Se i link in `lista_studenti.php` puntassero direttamente ad altri file nelle cartelle, romperesti il pattern MVC e il sistema di routing centralizzato che hai implementato.

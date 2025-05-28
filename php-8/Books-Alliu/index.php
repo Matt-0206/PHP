@@ -23,7 +23,11 @@ if ($action === 'dettaglio' && $id) {
 
     $controller->store();
 
-}else{
+} elseif ( $action === 'letti' ) {
+
+    $controller->letti();
+
+} else {
 
     $controller->lista();
 

@@ -21,6 +21,7 @@ IMPORTANTE: Il controller deve anche recuperare le variabili che gli vengono inv
 Nella lista, si sarebbe tentati di inserire un link diretto alla nuova view, del tipo:
 
 ``` html
+
 <p><a href="aggiungi_studente.php">Aggiungi un nuovo studente</a></p>
 
 ```
